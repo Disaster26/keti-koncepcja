@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KETI agencja reklamy Zakopane - druk, szyldy, laser, trofea</title>
+<meta name="description" content="KETI agencja reklamy w Zakopanem, ul. Sienkiewicza 37. Druk wielkoformatowy, szyldy i tablice, reklama na pojazdach, poligrafia, cięcie i grawerowanie laserem, pieczątki, trofea. Od 1992 roku.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="img/ikona-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="img/ikona-180.png">
+<link rel="preload" href="fonts/barlow-600-r.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/romb1-720.webp" imagesrcset="img/romb1-360.webp 360w, img/romb1-540.webp 540w, img/romb1-720.webp 720w, img/romb1-1080.webp 1080w, img/romb1-1440.webp 1440w" imagesizes="(max-width: 759px) 80vw, (max-width: 1100px) 60vw, 36vw" fetchpriority="high">
+<style>
+@font-face{font-family:Barlow;src:url(fonts/barlow-400-r.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Barlow;src:url(fonts/barlow-400-pl.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Barlow;src:url(fonts/barlow-600-r.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Barlow;src:url(fonts/barlow-600-pl.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--blue:#1438A0;--blue-d:#0F2C80;--red:#E10600;--ink:#111214;--black:#0C0C0E;--grey:#EEF0F3;--line:#D9DDE3;--txt:#2B2E33;--mut:#5C6169;--hh:64px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh)}
+body{margin:0;font:400 17px/1.6 Barlow,system-ui,"Segoe UI",Arial,sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:600;color:var(--ink);line-height:1.12;margin:0}
+.wrap{width:min(1240px,100% - 40px);margin:0 auto}
+/* romb z logo - motyw strony */
+.rb{display:inline-block;width:.5em;height:.5em;border:2px solid var(--red);background:var(--black);transform:rotate(45deg);flex:none}
+h2{font-size:clamp(30px,4vw,48px);display:flex;align-items:center;gap:.45em}
+h2 .rb{width:.42em;height:.42em}
+.ciemna h2{color:#fff}
+.btn{font-family:inherit;white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 34px;background:var(--blue);color:#fff;text-decoration:none;font-weight:600;font-size:17px;letter-spacing:.01em;border:0;cursor:pointer;clip-path:polygon(16px 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,16px 100%,0 50%);transition:background .2s}
+.btn:hover{background:var(--blue-d)}
+.btn.cz{background:var(--red)}
+.btn.cz:hover{background:#B80500}
+.btn.bi{background:#fff;color:var(--ink)}
+.btn.bi:hover{background:var(--grey)}
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);height:var(--hh)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:24px}
+.marka{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.marka img{width:48px;height:48px}
+.marka span{display:flex;flex-direction:column;line-height:1.1}
+.marka b{font-size:21px;letter-spacing:.06em;color:var(--ink)}
+.marka small{font-size:13.5px;color:var(--mut)}
+.menu{display:flex;gap:28px}
+.menu a{text-decoration:none;font-weight:600;font-size:16px;color:var(--ink);padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{border-color:var(--red)}
+.tel{display:flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;color:var(--ink);white-space:nowrap}
+.tel svg{width:20px;height:20px}
+.ham{display:none;width:44px;height:44px;border:0;background:none;padding:10px;cursor:pointer}
+.ham i{display:block;height:2px;background:var(--ink);margin:6px 0;transition:transform .2s,opacity .2s}
+.otw .ham i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.otw .ham i:nth-child(2){opacity:0}
+.otw .ham i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+/* pierwszy ekran: kolaz rombow z pracowni */
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;flex-direction:column;background:var(--black)}
+.kafle{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;background:var(--black)}
+.kafle img{width:100%;height:100%;object-fit:cover;object-position:50% 46%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,12,14,.92) 0%,rgba(12,12,14,.72) 30%,rgba(12,12,14,.12) 62%,rgba(12,12,14,0) 80%);pointer-events:none}
+.hero-in{position:relative;z-index:2;margin-top:auto;padding:0 0 clamp(36px,7vh,80px)}
+.hero h1{color:#fff;font-size:clamp(38px,4.4vw,70px);max-width:19ch;letter-spacing:-.01em}
+.hero p{color:#E6E8EC;font-size:clamp(17px,1.35vw,21px);max-width:44ch;margin:18px 0 30px}
+.hero .adres{display:flex;align-items:center;gap:10px;color:#fff;font-weight:600;margin:0 0 14px;font-size:16px}
+/* oferta */
+.sek{padding:clamp(64px,9vw,120px) 0}
+.szara{background:var(--grey)}
+.ciemna{background:var(--black);color:#C9CDD3}
+.lead{font-size:clamp(18px,1.5vw,21px);max-width:60ch;margin:20px 0 0;color:var(--mut)}
+.ciemna .lead{color:#B9BEC6}
+.uslugi{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:64px}
+.uslugi li{display:grid;align-content:start;grid-template-columns:22px minmax(0,1fr);gap:4px 16px;padding:24px 0;border-top:1px solid var(--line)}
+.uslugi li .rb{margin-top:9px;width:12px;height:12px}
+.uslugi h3{font-size:22px}
+.uslugi p{grid-column:2;margin:0;color:var(--mut)}
+.pas-cta{margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
+.pas-cta p{margin:0;font-weight:600;color:var(--ink)}
+/* trofea - galeria */
+.tro-g{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:24px}
+.strz{display:flex;gap:10px}
+.strz button{width:52px;height:52px;border:1px solid #3A3D44;background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center;transition:border-color .2s,background .2s}
+.strz button:hover{border-color:var(--red);background:#1A1B1F}
+.strz svg{width:20px;height:20px}
+.galeria{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:44px;padding:0 max(20px,(100vw - 1240px)/2) 8px;scroll-padding-inline:max(20px,(100vw - 1240px)/2);scrollbar-width:none;cursor:grab}
+.galeria::-webkit-scrollbar{display:none}
+.galeria.ciag{cursor:grabbing;scroll-snap-type:none}
+.galeria figure{margin:0;flex:none;scroll-snap-align:start;background:#1A1B1F}
+.galeria button{display:block;padding:0;border:0;background:none;cursor:zoom-in}
+.galeria img{height:clamp(320px,42vw,520px);width:auto}
+.galeria figcaption{padding:12px 4px 0;font-size:15px;color:#AEB3BB;background:var(--black)}
+.tro-dol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:56px;padding-top:32px;border-top:1px solid #2A2C31}
+.tro-dol h3{color:#fff;font-size:20px;margin-bottom:6px}
+.tro-dol p{margin:0}
+.tro-cta{margin-top:44px}
+/* filc */
+.filc{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,6vw,96px);align-items:center}
+.filc figure{margin:0;justify-self:center;max-width:430px;width:100%;border:1px solid var(--line);padding:14px;background:#fff}
+.filc figure img{width:100%;aspect-ratio:9/13;object-fit:cover}
+.filc ul{margin:24px 0 0;padding:0;list-style:none}
+.filc li{display:flex;gap:14px;align-items:baseline;padding:10px 0;border-top:1px solid var(--line)}
+.filc li .rb{width:10px;height:10px;transform:translateY(-1px) rotate(45deg)}
+/* projekty */
+.projekty{margin-top:44px;border-top:1px solid var(--line)}
+.projekty a{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr) auto;gap:24px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.projekty a:hover h3{color:var(--blue)}
+.projekty h3{font-size:clamp(24px,2.4vw,32px);transition:color .2s}
+.projekty h3 small{display:block;font-size:15px;font-weight:400;color:var(--mut);margin-top:6px}
+.projekty p{margin:0;color:var(--mut)}
+.projekty .idz{font-weight:600;color:var(--blue);white-space:nowrap}
+/* o firmie */
+.firma{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(32px,6vw,96px);align-items:center}
+.firma .rok{margin:0;font-size:clamp(84px,11vw,160px);font-weight:600;line-height:.9;color:var(--blue);letter-spacing:-.02em}
+.firma .rok span{display:block;font-size:18px;letter-spacing:.02em;color:var(--mut);font-weight:400;margin-top:14px;line-height:1.4}
+.firma blockquote{margin:28px 0 0;padding:0 0 0 22px;border-left:3px solid var(--red);font-size:19px;color:var(--ink)}
+.firma cite{display:block;font-style:normal;font-weight:600;margin-top:10px;font-size:16px;color:var(--mut)}
+.firma figure{margin:0}
+.firma figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,5vw,80px);margin-top:48px}
+.osoby{display:grid;gap:0;align-content:start}
+.osoba{padding:22px 0;border-top:1px solid var(--line)}
+.osoba h3{font-size:21px}
+.osoba .rola{margin:4px 0 10px;color:var(--mut);font-size:16px}
+.osoba a{display:inline-block;font-weight:600;text-decoration:none;margin-right:22px;padding:4px 0;border-bottom:1px solid var(--line)}
+.osoba a:hover{border-color:var(--red)}
+.adr{padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.adr p{margin:0}
+.adr b{color:var(--ink)}
+form{background:var(--grey);padding:clamp(22px,3vw,40px)}
+form h3{font-size:24px;margin-bottom:18px}
+.pola{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+label{display:block;font-size:15px;font-weight:600;color:var(--ink)}
+input,textarea,select{display:block;width:100%;margin-top:6px;padding:13px 14px;font:inherit;font-size:16px;border:1px solid #C9CED6;background:#fff;color:var(--txt);border-radius:0}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--blue);outline-offset:-1px;border-color:var(--blue)}
+textarea{min-height:120px;resize:vertical}
+.cala{grid-column:1/-1}
+form .btn{margin-top:18px}
+.info{font-size:14px;color:var(--mut);margin:12px 0 0}
+.mapa{margin-top:56px;position:relative;height:360px;background:var(--grey);border:1px solid var(--line)}
+.mapa::before{content:"ul. Sienkiewicza 37, 34-500 Zakopane";position:absolute;left:0;right:0;top:calc(50% - 76px);text-align:center;font-weight:600;color:var(--ink);font-size:20px;padding:0 16px}
+.mapa button{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* stopka */
+.stopka{background:var(--black);color:#AEB3BB;padding:48px 0 32px;font-size:15.5px}
+.stopka .wrap{display:grid;grid-template-columns:minmax(0,2fr) repeat(2,minmax(0,1fr));gap:28px}
+.stopka b{color:#fff}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka p{margin:0 0 6px}
+.dol{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid #2A2C31;padding-top:20px;margin-top:8px}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+/* powiekszenie zdjec */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(8,8,10,.94);display:none;align-items:center;justify-content:center;padding:56px 16px 24px}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:100%;object-fit:contain}
+.lb button{position:absolute;top:10px;right:12px;width:44px;height:44px;border:0;background:none;color:#fff;font-size:34px;line-height:1;cursor:pointer}
+/* pasek na telefonie po przewinieciu */
+.mob{display:none}
+@media (max-width:1060px){
+ .menu{position:fixed;top:var(--hh);left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:8px 20px 20px;transform:translateY(-130%);transition:transform .25s;z-index:-1}
+ .otw .menu{transform:none}
+ .menu a{padding:14px 0;border-bottom:1px solid var(--line);font-size:18px}
+ .ham{display:block}
+ .uslugi{grid-template-columns:minmax(0,1fr)}
+ .projekty a{grid-template-columns:minmax(0,1fr)}
+ .projekty a{gap:8px}
+ .tro-dol{grid-template-columns:minmax(0,1fr);gap:20px}
+}
+@media (max-width:860px){
+ .filc,.firma,.kontakt{grid-template-columns:minmax(0,1fr)}
+ .firma figure{order:-1}
+ .stopka .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .stopka .wrap>div:first-child{grid-column:1/-1}
+}
+@media (max-width:759px){
+ :root{--hh:58px}
+ body{font-size:16.5px}
+ .wrap{width:min(1240px,100% - 32px)}
+ .marka img{width:40px;height:40px}
+ .marka b{font-size:18px}
+ .marka small{font-size:12.5px}
+ .tel span{display:none}
+ .tel{width:44px;height:44px;justify-content:center;border:1px solid var(--line)}
+ .top .wrap{gap:8px}
+ .hero::after{display:none}
+ .kafle{position:relative;inset:auto;flex:1 1 0;min-height:min(62vw,30svh);grid-template-columns:repeat(2,minmax(0,1fr))}
+ .kafle img:nth-child(n+3){display:none}
+ .hero-in{margin-top:0;padding:22px 0 26px;background:var(--black)}
+ .hero h1{font-size:clamp(28px,8vw,36px)}
+ .hero p{font-size:16.5px;margin:12px 0 22px}
+ .hero .adres{font-size:14.5px;margin-bottom:10px}
+ .hero .btn{width:100%}
+ h2{font-size:clamp(28px,8vw,36px)}
+ .pola{grid-template-columns:minmax(0,1fr)}
+ .tro-g{grid-template-columns:minmax(0,1fr)}
+ .strz{display:none}
+ .galeria{padding:0 16px 8px;gap:12px;scroll-padding-inline:16px}
+ .galeria img{height:340px}
+ .mapa{height:300px}
+ .mob{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;background:#fff;border-top:1px solid var(--line);padding:8px 12px calc(8px + env(safe-area-inset-bottom));gap:8px;transform:translateY(110%);transition:transform .25s}
+ .mob.widac{transform:none}
+ .mob a{flex:1;min-height:48px;padding:0 10px;font-size:16px}
+ .mob .zadzwon{background:var(--ink)}
+ .stopka{padding-bottom:96px}
+}
+@media (min-width:2200px){.hero{min-height:min(calc(100svh - var(--hh)),1200px)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+ <div class="wrap">
+  <a class="marka" href="#top" aria-label="KETI agencja reklamy - początek strony"><img src="img/logo-96.webp" srcset="img/logo-96.webp 1x, img/logo-192.webp 2x" width="48" height="48" alt="Logo KETI - czarny romb z napisem keti"><span><b>KETI</b><small>agencja reklamy · Zakopane</small></span></a>
+  <nav class="menu" id="menu" aria-label="Menu główne">
+   <a href="#oferta">Oferta</a>
+   <a href="#trofea">Trofea i grawer</a>
+   <a href="#filc">Filc z Podhala</a>
+   <a href="#projekty">Projekty</a>
+   <a href="#firma">O firmie</a>
+   <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="tel" href="tel:+48601514086" aria-label="Zadzwoń: 601 514 086"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h3.2l1.5 4-2 1.3a10 10 0 0 0 5.5 5.5l1.3-2 4 1.5V16a1.5 1.5 0 0 1-1.6 1.5C8.6 17 3 11.4 2.5 4.1A1.5 1.5 0 0 1 4 2.5z"/></svg><span>601 514 086</span></a>
+  <button class="ham" id="ham" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="kafle">
+  <img src="img/romb1-720.webp" srcset="img/romb1-360.webp 360w, img/romb1-540.webp 540w, img/romb1-720.webp 720w, img/romb1-1080.webp 1080w, img/romb1-1440.webp 1440w" sizes="(max-width: 759px) 80vw, (max-width: 1100px) 60vw, 36vw" width="1440" height="2160" alt="Trofeum w kształcie rombu z sylwetką skoczka na dębowej podstawie" fetchpriority="high">
+  <img src="img/romb2-720.webp" srcset="img/romb2-360.webp 360w, img/romb2-540.webp 540w, img/romb2-720.webp 720w, img/romb2-1080.webp 1080w, img/romb2-1440.webp 1440w" sizes="(max-width: 759px) 80vw, (max-width: 1100px) 60vw, 36vw" width="1440" height="2160" alt="Trofeum w kształcie rombu z sylwetką biegacza narciarskiego">
+  <img src="img/romb3-720.webp" srcset="img/romb3-360.webp 360w, img/romb3-540.webp 540w, img/romb3-720.webp 720w, img/romb3-1080.webp 1080w, img/romb3-1440.webp 1440w" sizes="(max-width: 759px) 80vw, (max-width: 1100px) 60vw, 36vw" width="1440" height="2160" alt="Trofeum w kształcie rombu z sylwetką biathlonisty">
+  <img src="img/romb4-720.webp" srcset="img/romb4-360.webp 360w, img/romb4-540.webp 540w, img/romb4-720.webp 720w, img/romb4-1080.webp 1080w, img/romb4-1440.webp 1440w" sizes="(max-width: 759px) 80vw, (max-width: 1100px) 60vw, 36vw" width="1440" height="2160" alt="Trofeum w kształcie rombu z sylwetką siatkarza">
+ </div>
+ <div class="hero-in">
+  <div class="wrap">
+   <p class="adres"><span class="rb" aria-hidden="true"></span>ul. Sienkiewicza 37, Zakopane · od 1992 roku</p>
+   <h1>Agencja reklamy w Zakopanem - od pieczątki po billboard</h1>
+   <p>Druk wielkoformatowy, szyldy i tablice, reklama na pojazdach, poligrafia, cięcie i grawerowanie laserem. Wszystko załatwisz w jednym miejscu, przy Sienkiewicza 37.</p>
+   <a class="btn" href="#kontakt">Zapytaj o wycenę</a>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="oferta">
+ <div class="wrap">
+  <h2><span class="rb" aria-hidden="true"></span>Co robimy</h2>
+  <p class="lead">Reklama, poligrafia i internet w jednym miejscu. Jeden projekt może trafić na baner, wizytówkę, samochód i stronę internetową - i wszędzie wygląda tak samo.</p>
+  <ul class="uslugi">
+   <li><span class="rb" aria-hidden="true"></span><h3>Druk wielkoformatowy</h3><p>Banery, billboardy i wydruki wielkoformatowe na zewnątrz i do wnętrz.</p></li>
+   <li><span class="rb" aria-hidden="true"></span><h3>Szyldy, tablice i reklamy świetlne</h3><p>Szyldy nad wejście, tablice informacyjne i reklamy podświetlane.</p></li>
+   <li><span class="rb" aria-hidden="true"></span><h3>Reklama na pojazdach</h3><p>Oznakowanie samochodów firmowych grafiką i danymi firmy.</p></li>
+   <li><span class="rb" aria-hidden="true"></span><h3>Poligrafia i druk cyfrowy</h3><p>Ulotki, katalogi, foldery, teczki ofertowe i wizytówki.</p></li>
+   <li><span class="rb" aria-hidden="true"></span><h3>Cięcie i grawerowanie laserem</h3><p>Laser CO2: grawer na szkle, drewnie, metalu i laminacie, elementy cięte na wymiar, druk na gadżetach.</p></li>
+   <li><span class="rb" aria-hidden="true"></span><h3>Pieczątki</h3><p>Pieczątki firmowe i imienne.</p></li>
+   <li><span class="rb" aria-hidden="true"></span><h3>Grafika i identyfikacja</h3><p>Projekty graficzne, identyfikacja wizualna, fotografia i marketing.</p></li>
+   <li><span class="rb" aria-hidden="true"></span><h3>Strony www i hosting</h3><p>Strony internetowe dla firm i utrzymanie ich na serwerze.</p></li>
+  </ul>
+  <div class="pas-cta"><a class="btn" href="#kontakt">Opisz, czego potrzebujesz</a><p>albo zadzwoń: <a href="tel:+48601514086">601 514 086</a></p></div>
+ </div>
+</section>
+
+<section class="sek ciemna" id="trofea">
+ <div class="wrap tro-g">
+  <div>
+   <h2><span class="rb" aria-hidden="true"></span>Trofea i grawer z naszej pracowni</h2>
+   <p class="lead">Puchary, medale, statuetki szklane i drewniane z grawerem na miejscu. Dla klubów, szkół, firm i organizatorów zawodów. Wiele z nich projektujemy i wycinamy laserem sami.</p>
+  </div>
+  <div class="strz"><button type="button" data-k="-1" aria-label="Poprzednie zdjęcia"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.5 4 6.5 10l6 6"/></svg></button><button type="button" data-k="1" aria-label="Następne zdjęcia"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="m7.5 4 6 6-6 6"/></svg></button></div>
+ </div>
+ <div class="galeria" id="galeria">
+  <figure><button type="button" data-duze="img/podium-1400.webp"><img src="img/podium-700.webp" srcset="img/podium-400.webp 400w, img/podium-700.webp 700w, img/podium-1000.webp 1000w" sizes="(max-width: 759px) 320px, 480px" width="1440" height="1569" alt="Komplet trofeów na miejsca 1, 2 i 3 na drewnianych podstawach" loading="lazy"></button><figcaption>Trofea na podium, cięte laserem</figcaption></figure>
+  <figure><button type="button" data-duze="img/skoczek-1400.webp"><img src="img/skoczek-400.webp" srcset="img/skoczek-400.webp 400w, img/skoczek-700.webp 700w" sizes="(max-width: 759px) 240px, 370px" width="1848" height="2615" alt="Drewniane trofeum z grawerem skoczka narciarskiego i Tatr" loading="lazy"></button><figcaption>Skoczek i Tatry w drewnie</figcaption></figure>
+  <figure><button type="button" data-duze="img/pierscien-1000.webp"><img src="img/pierscien-400.webp" srcset="img/pierscien-400.webp 400w, img/pierscien-700.webp 700w" sizes="(max-width: 759px) 160px, 240px" width="1135" height="2560" alt="Czarne trofeum w kształcie pierścienia na dębowym bloku z grawerem" loading="lazy"></button><figcaption>Grawer na dębie</figcaption></figure>
+  <figure><button type="button" data-duze="img/klucz-1000.webp"><img src="img/klucz-400.webp" srcset="img/klucz-400.webp 400w, img/klucz-700.webp 700w" sizes="(max-width: 759px) 160px, 240px" width="1135" height="2560" alt="Statuetka w kształcie klucza wiolinowego na drewnianej podstawie" loading="lazy"></button><figcaption>Klucz wiolinowy dla muzyków</figcaption></figure>
+  <figure><button type="button" data-duze="img/szklo-1000.webp"><img src="img/szklo-400.webp" srcset="img/szklo-400.webp 400w, img/szklo-700.webp 700w, img/szklo-1000.webp 1000w" sizes="(max-width: 759px) 340px, 520px" width="1200" height="1200" alt="Szklana statuetka z grawerem I miejsce" loading="lazy"></button><figcaption>Statuetki szklane z grawerem</figcaption></figure>
+  <figure><button type="button" data-duze="img/romb1-1440.webp"><img src="img/romb1-360.webp" srcset="img/romb1-360.webp 360w, img/romb1-540.webp 540w, img/romb1-720.webp 720w, img/romb1-1080.webp 1080w" sizes="(max-width: 759px) 230px, 350px" width="1440" height="2160" alt="Romb z sylwetką skoczka - trofeum z pracowni KETI" loading="lazy"></button><figcaption>Romby z sylwetkami zawodników</figcaption></figure>
+ </div>
+ <div class="wrap">
+  <div class="tro-dol">
+   <div><h3>Grawer na miejscu</h3><p>Szkło, drewno, metal i laminat. Tabliczki i znakowanie przedmiotów.</p></div>
+   <div><h3>Najpierw projekt</h3><p>Przed wykonaniem dostajesz projekt do akceptacji. Przy większych ilościach oferta z rabatem.</p></div>
+   <div><h3>Sklep internetowy keti.pl</h3><p>Puchary, medale i statuetki można zamówić online. Darmowa dostawa od 1000 zł.</p></div>
+  </div>
+  <div class="tro-cta"><a class="btn cz" href="https://keti.pl" rel="noopener">Przejdź do sklepu keti.pl</a></div>
+ </div>
+</section>
+
+<section class="sek szara" id="filc">
+ <div class="wrap filc">
+  <figure><img src="img/filc-400.webp" srcset="img/filc-400.webp 400w, img/filc-700.webp 700w, img/filc-900.webp 900w" sizes="(max-width: 759px) 90vw, 400px" width="900" height="1600" alt="Szary filc z wyciętą białą parzenicą na ścianie" loading="lazy"></figure>
+  <div>
+   <h2><span class="rb" aria-hidden="true"></span>Filc z Podhala</h2>
+   <p class="lead">Dekoracje i upominki z filcu z góralskim wzorem. Parzenice i motywy podhalańskie wycinamy laserem, więc każdy element jest równy i powtarzalny.</p>
+   <ul>
+    <li><span class="rb" aria-hidden="true"></span>Panele i dekoracje ścienne z filcu</li>
+    <li><span class="rb" aria-hidden="true"></span>Podkładki i drobne upominki</li>
+    <li><span class="rb" aria-hidden="true"></span>Gadżety reklamowe z filcu z logo firmy</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="projekty">
+ <div class="wrap">
+  <h2><span class="rb" aria-hidden="true"></span>Nasze projekty</h2>
+  <p class="lead">Poza agencją prowadzimy trzy własne serwisy, zakorzenione w Tatrach.</p>
+  <div class="projekty">
+   <a href="https://keti.pl" rel="noopener"><h3>keti.pl<small>sklep z trofeami</small></h3><p>Statuetki, medale i trofea na każdą okazję: sport, biznes, kultura.</p><span class="idz">keti.pl</span></a>
+   <a href="https://bajkowepodhale.pl" rel="noopener"><h3>Bajkowe Podhale<small>turystyka rowerowa</small></h3><p>Portal turystyki rowerowej w Tatrach i na Podhalu: trasy, mapy i inspiracje.</p><span class="idz">bajkowepodhale.pl</span></a>
+   <a href="https://travelzakopane.pl" rel="noopener"><h3>TravelZakopane<small>przewodnik po Zakopanem</small></h3><p>Planowanie wyjazdu w Tatry: przewodnik, trasy i atrakcje Zakopanego w jednym miejscu.</p><span class="idz">travelzakopane.pl</span></a>
+  </div>
+ </div>
+</section>
+
+<section class="sek szara" id="firma">
+ <div class="wrap firma">
+  <div>
+   <p class="rok">1992<span>od tego roku działamy w reklamie</span></p>
+   <blockquote>Zaczynaliśmy od produkcji reklam, przez produkcję pucharów i trofeów szklanych, do elementów dekoracyjnych i gadżetów reklamowych z filcu.<cite>Wojciech Janik, założyciel firmy</cite></blockquote>
+  </div>
+  <figure><img src="img/grawer-1000.webp" srcset="img/grawer-700.webp 700w, img/grawer-1000.webp 1000w, img/grawer-1400.webp 1400w" sizes="(max-width: 860px) 92vw, 520px" width="2560" height="1135" alt="Dębowy blok z grawerem Klasyfikacja generalna" loading="lazy" style="aspect-ratio:2560/1135"></figure>
+ </div>
+</section>
+
+<section class="sek" id="kontakt">
+ <div class="wrap">
+  <h2><span class="rb" aria-hidden="true"></span>Kontakt</h2>
+  <p class="lead">Napisz albo zadzwoń do osoby, która zajmuje się Twoją sprawą. Pracownia i sklep: ul. Sienkiewicza 37 w Zakopanem.</p>
+  <div class="kontakt">
+   <div class="osoby">
+    <div class="osoba"><h3>Wojciech Janik</h3><p class="rola">Laser CO2, druk na gadżetach, trofea sportowe</p><a href="tel:+48601514086">601 514 086</a><a href="mailto:biuro@keti.com.pl">biuro@keti.com.pl</a></div>
+    <div class="osoba"><h3>Daniel Boczkowski-Janik</h3><p class="rola">Grafika, druk, marketing, internet, fotografia, identyfikacja</p><a href="tel:+48534900093">534 900 093</a><a href="mailto:reklamy@keti.com.pl">reklamy@keti.com.pl</a></div>
+    <div class="adr"><p><b>KETI agencja reklamy</b></p><p>ul. Sienkiewicza 37, 34-500 Zakopane</p><p>tel. <a href="tel:+48182017180">18 201 71 80</a></p><p>Sklep czynny pon.-pt. 10:00-17:00, odbiór w innym terminie po wcześniejszym telefonie.</p></div>
+   </div>
+   <form id="form" novalidate>
+    <h3>Zapytanie o wycenę</h3>
+    <div class="pola">
+     <label>Imię i nazwisko<input name="n" autocomplete="name" required></label>
+     <label>Telefon lub e-mail<input name="k" autocomplete="email" required></label>
+     <label class="cala">Czego dotyczy zapytanie
+      <select name="t"><option>Druk wielkoformatowy, banery</option><option>Szyld, tablica, reklama świetlna</option><option>Reklama na pojeździe</option><option>Ulotki, katalogi, wizytówki</option><option>Grawer, cięcie laserem</option><option>Trofea, puchary, medale</option><option>Pieczątka</option><option>Inne</option></select></label>
+     <label class="cala">Wiadomość (wymiary, ilość, termin)<textarea name="w"></textarea></label>
+    </div>
+    <button class="btn" type="submit">Wyślij zapytanie</button>
+    <p class="info" id="info">Formularz pokazowy w podglądzie - na docelowej stronie wiadomość trafi prosto na biuro@keti.com.pl.</p>
+   </form>
+  </div>
+  <div class="mapa" id="mapa"><button class="btn" type="button" id="mapaBtn">Pokaż mapę dojazdu</button></div>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="wrap">
+  <div><p><b>KETI agencja reklamy</b></p><p>ul. Sienkiewicza 37, 34-500 Zakopane</p><p><a href="tel:+48601514086">601 514 086</a> · <a href="tel:+48182017180">18 201 71 80</a></p><p><a href="mailto:biuro@keti.com.pl">biuro@keti.com.pl</a></p></div>
+  <div><p><b>Strona</b></p><p><a href="#oferta">Oferta</a></p><p><a href="#trofea">Trofea i grawer</a></p><p><a href="#filc">Filc z Podhala</a></p><p><a href="#kontakt">Kontakt</a></p></div>
+  <div><p><b>Projekty</b></p><p><a href="https://keti.pl" rel="noopener">keti.pl</a></p><p><a href="https://bajkowepodhale.pl" rel="noopener">bajkowepodhale.pl</a></p><p><a href="https://travelzakopane.pl" rel="noopener">travelzakopane.pl</a></p></div>
+  <div class="dol"><span>© <span id="rok">2026</span> KETI agencja reklamy</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=keti.com.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+ </div>
+</footer>
+
+<div class="mob" id="mob"><a class="btn zadzwon" href="tel:+48601514086">Zadzwoń</a><a class="btn" href="#kontakt">Zapytaj o wycenę</a></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie"><button type="button" aria-label="Zamknij">×</button><img alt=""></div>
+
+<script>
+(function(){
+var d=document,top=d.getElementById('top'),ham=d.getElementById('ham');
+ham.addEventListener('click',function(){var o=top.classList.toggle('otw');ham.setAttribute('aria-expanded',o);ham.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu')});
+d.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){top.classList.remove('otw');ham.setAttribute('aria-expanded','false')})});
+d.getElementById('rok').textContent=new Date().getFullYear();
+// galeria: przeciaganie mysza + strzalki
+var g=d.getElementById('galeria'),dn=false,sx=0,sl=0,mv=false;
+g.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;dn=true;mv=false;sx=e.clientX;sl=g.scrollLeft});
+window.addEventListener('pointermove',function(e){if(!dn)return;var dx=e.clientX-sx;if(Math.abs(dx)>5){mv=true;g.classList.add('ciag')}g.scrollLeft=sl-dx});
+window.addEventListener('pointerup',function(){if(!dn)return;dn=false;g.classList.remove('ciag')});
+g.addEventListener('click',function(e){if(mv){e.preventDefault();e.stopPropagation();mv=false;return}var b=e.target.closest('button[data-duze]');if(b)pokaz(b.getAttribute('data-duze'),b.querySelector('img').alt)},true);
+g.addEventListener('dragstart',function(e){e.preventDefault()});
+d.querySelectorAll('.strz button').forEach(function(b){b.addEventListener('click',function(){g.scrollBy({left:(+b.dataset.k)*Math.min(g.clientWidth*.7,600),behavior:'smooth'})})});
+// powiekszenie
+var lb=d.getElementById('lb'),li=lb.querySelector('img');
+function pokaz(src,alt){li.src=src;li.alt=alt;lb.classList.add('on')}
+function zamknij(){lb.classList.remove('on');li.removeAttribute('src')}
+lb.addEventListener('click',zamknij);d.addEventListener('keydown',function(e){if(e.key==='Escape')zamknij()});
+// formularz pokazowy
+d.getElementById('form').addEventListener('submit',function(e){e.preventDefault();d.getElementById('info').textContent='To tylko podgląd - na docelowej stronie zapytanie zostanie wysłane, a Ty dostaniesz potwierdzenie na e-mail.'});
+// mapa dopiero po kliknieciu
+d.getElementById('mapaBtn').addEventListener('click',function(){var f=d.createElement('iframe');f.src='https://maps.google.com/maps?q=Sienkiewicza+37,+34-500+Zakopane&z=16&output=embed';f.title='Mapa dojazdu: ul. Sienkiewicza 37, Zakopane';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';var m=d.getElementById('mapa');m.innerHTML='';m.style.background='none';m.appendChild(f)});
+// dolny pasek na telefonie po przewinieciu pierwszego ekranu
+var mob=d.getElementById('mob'),hb=d.querySelector('.hero .btn');
+if('IntersectionObserver' in window){new IntersectionObserver(function(en){var e=en[0];mob.classList.toggle('widac',!e.isIntersecting&&e.boundingClientRect.top<0)}).observe(hb)}
+})();
+</script>
+</body>
+</html>
